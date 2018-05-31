@@ -11,9 +11,9 @@ func main() {
 	slice[2] = 3
 
 	fmt.Println(slice)
-
+	slice = append(slice, 6)
 	slice2 := []int{1, 2, 3, 4, 5, 'k'}
 	fmt.Println(slice2)
 	fmt.Println("Slice with length and capacity")
-	fmt.Printf("slice: length %v, capacity %v, %v\n", len(slice2), cap(slice2), slice)
+	fmt.Printf("slice: length %v, capacity %v, %v\n", len(slice), cap(slice), slice)
 }
